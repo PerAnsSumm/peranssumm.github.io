@@ -42,6 +42,8 @@ For **Task B** (Summary Generation), we use two sets of evaluation metrics that 
 **Camera-ready papers due:**   
 **CL4Health Workshop:**  
 
+\* All deadlines are Anywhere on Earth (UTC - 12)
+
 ## Organisers
 - **Shweta Yadav** - University of Illinois at Chicago, USA
 - **Md. Shad Akhtar** - Indraprastha Institute of Information Technology Delhi, India
