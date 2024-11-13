@@ -42,7 +42,7 @@ header:
     button:
       enable: true
       text: "CodaBench"
-      url: "https://www.codabench.org/"
+      url: "https://www.codabench.org/competitions/4312/"
     show_search: false
     show_theme_chooser: true
 

@@ -5,7 +5,7 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Documentation
+  - name: Task
     url: docs/
     weight: 20
   # - name: Timeline
@@ -15,7 +15,7 @@ main:
   #   url: showcase/
   #   weight: 40
   - name: Contact
-    url: community/
+    url: contact/
     weight: 50
 
 sidebar:
@@ -26,9 +26,9 @@ sidebar:
     weight: 1
   - identifier: contact
     name: "Contact"
-    pageRef: "/community"
+    pageRef: "/contact"
     weight: 2
   - identifier: codabench
     name: "CodaBench ↗"
-    url: "https://codabench.org"
+    url: "https://www.codabench.org/competitions/4312/"
     weight: 3

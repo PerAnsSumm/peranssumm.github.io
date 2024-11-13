@@ -14,7 +14,7 @@ sections:
       text: Shared Task @ CL4Health Workshop, NAACL 2025
       primary_action:
         text: Competition Link
-        url: https://www.codabench.org/
+        url: https://www.codabench.org/competitions/4312/
         icon: rocket-launch
       secondary_action:
         text: Read the docs

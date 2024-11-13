@@ -1,13 +1,15 @@
 ---
-linkTitle: Documentation
-title: Introduction
+linkTitle: Task
+title: PerAnsSumm Shared Task - CL4Health@ NAACL 2025
 ---
 
 👋 Welcome to the official shared task website for PerAnsSumm: Perspective-aware Healthcare answer summarisation, a shared task organised at the CL4Health workshop colocated with NAACL 2025.
 
-In recent years, healthcare community question-answering (CQA) forums have gained popularity, where users seek advice by posting healthcare-related questions and receiv- ing answers from other users. Even though these platforms are not necessarily fre- quented by experts, people often turn to them for their health-related inquiries for rea- sons such as the availability of free information, avoiding medical jargon, discomfort with discussing sensitive personal issues in person, and learning from the first-hand experiences of others [1]. The answers provide various user perspectives, such as per- sonal experiences, factual information, suggestions, and more. For example, Table 1 shows a CQA thread where a user seeks advice on ‘alternatives to gallstone surgery’. In the responses, users offer diverse perspectives: Answer 1 includes general informa- tion, suggestions, personal experiences, and potential implications. Similar trends are observed in the other user responses.
+## Introduction
 
-Traditionally, the CQA answer summarization task focuses on a single best-voted answer [2, 3] as a reference summary. However, a single answer does not capture all the perspectives offered in other responses. Moreover, a structured presentation of the information through perspective-specific summaries may be more useful for end users [4, 5]. To address these gaps, this proposal introduces a novel perspective-specific answer summarization task within a CQA setup.
+In recent years, healthcare community question-answering (CQA) forums have gained popularity, where users seek advice by posting healthcare-related questions and receiv- ing answers from other users. Even though these platforms are not necessarily fre- quented by experts, people often turn to them for their health-related inquiries for rea- sons such as the availability of free information, avoiding medical jargon, discomfort with discussing sensitive personal issues in person, and learning from the first-hand experiences of others [1]. The answers provide various user perspectives, such as personal experiences, factual information, suggestions, and more. 
+
+Traditionally, the CQA answer summarization task focuses on a single best-voted answer [2, 3] as a reference summary. However, a single answer does not capture all the perspectives offered in other responses. Moreover, a structured presentation of the information through perspective-specific summaries may be more useful for end users [4, 5]. To address these gaps, we introduce a novel perspective-specific answer summarization task within a CQA setup.
 
 <!--more-->
 
@@ -15,16 +17,21 @@ Traditionally, the CQA answer summarization task focuses on a single best-voted 
 
 ## Task Description
 Given a question Q, a set of answers A, and perspective categories (‘cause’, ‘suggestion’, ‘experience’, ‘question’, and ‘information’), you are assigned the following two tasks:
-1. **Task A:** Identify the spans in the user answers that reflect a particular perspective.
+1. **Task A:** Identify the spans in the user answers that reflect a particular perspective and classify the span to the correct perspective.
 2. **Task B:** Generate a concise summary that represents the underlying perspective contained within the spans across all answers.
+
+![Task Description](task_image.jpg "Task A: Span Identification and Classification (color-highlighted spans in answers), Task B: Summary Generation (Perspective specific summaries)")
 
 ## Dataset
 We use the PUMA dataset [6], a perspective-aware summary annotated corpus of medical question-answer pairs. The PUMA dataset consists of 3, 167 CQA threads with approximately 10K answers filtered from the Yahoo! L6 corpus. Each answer in PUMA is annotated with five perspective spans: ‘cause’, ‘suggestion’, ‘experience’, ‘question’, and ‘information’. Following the perspective and span annotations, summaries are written for each identified perspective. These summaries are concise representations of the underlying perspectives contained within the spans across all answers. Each CQA thread has up to five perspective-specific summaries.
 
+## Participation
+
+Please visit the CodaBench page to register for the competition and access the dataset.
 
 ## Evaluation Metrics
 
-For **Task A** (Span Identification), we use macro-averaged F1 score.
+For **Task A** (Span Identification and Classification), we use (i) macro-averaged F1 score for classification and (ii) Strict-matching and Proportional-matching for Span Identification.
 
 For **Task B** (Summary Generation), we use two sets of evaluation metrics that capture (i) relevance and (ii) factuality.  
 * Relevance - ROUGE (R1, R2, and RL) [7], BLEU [8], Meteor [9], and BERTScore [10]
@@ -33,14 +40,14 @@ For **Task B** (Summary Generation), we use two sets of evaluation metrics that 
 ## Timeline
 
 **First call for participation:** 12th November, 2024  
-**Release of task data (training, validation, seen_test):** 12th November, 2024  
+**Release of task data (training, validation):** 12th November, 2024  
 **Release of test data:** 25th January, 2025  
 **System submission deadline:** 1st February, 2025  
 **Release of final results:** 5th February, 2025  
 **System papers due:** 25th February, 2025  
 **Notification of acceptance:** 7th March, 2025  
-**Camera-ready papers due:**   
-**CL4Health Workshop:**  
+**Camera-ready papers due:**  TBC  
+**CL4Health Workshop:**  TBC
 
 \* All deadlines are 23:59 UTC-12 ("anywhere on Earth").
 
