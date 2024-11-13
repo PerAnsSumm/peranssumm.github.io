@@ -7,9 +7,10 @@ title: PerAnsSumm Shared Task - CL4Health@ NAACL 2025
 
 ## Introduction
 
-In recent years, healthcare community question-answering (CQA) forums have gained popularity, where users seek advice by posting healthcare-related questions and receiv- ing answers from other users. Even though these platforms are not necessarily fre- quented by experts, people often turn to them for their health-related inquiries for rea- sons such as the availability of free information, avoiding medical jargon, discomfort with discussing sensitive personal issues in person, and learning from the first-hand experiences of others [1]. The answers provide various user perspectives, such as personal experiences, factual information, suggestions, and more. 
+In recent years, healthcare community question-answering (CQA) forums have gained popularity, allowing users to seek advice by posting healthcare-related questions and receiving answers from other users. These answers provide an array of user perspectives, ranging from sharing personal experiences to providing factual information or offering suggestions.
+Traditionally, the CQA answer summarization task focuses on a single best-voted answer [1, 2] as a reference summary. However, a single answer often fails to capture the diverse perspectives presented across multiple answers. Providing the answers in structured, perspective-specific summaries could better serve the information needs of end users
 
-Traditionally, the CQA answer summarization task focuses on a single best-voted answer [2, 3] as a reference summary. However, a single answer does not capture all the perspectives offered in other responses. Moreover, a structured presentation of the information through perspective-specific summaries may be more useful for end users [4, 5]. To address these gaps, we introduce a novel perspective-specific answer summarization task within a CQA setup.
+The PerAnsSumm shared task focuses on identifying and classifying perspective-specific spans (Task A) and generating perspective-specific summaries from the question-answer thread (Task B).
 
 <!--more-->
 
@@ -23,7 +24,7 @@ Given a question Q, a set of answers A, and perspective categories (‘cause’,
 ![Task Description](task_image.png "Task A: Span Identification and Classification (color-highlighted spans in answers), Task B: Summary Generation (Perspective specific summaries)")
 
 ## Dataset
-We use the PUMA dataset [6], a perspective-aware summary annotated corpus of medical question-answer pairs. The PUMA dataset consists of 3, 167 CQA threads with approximately 10K answers filtered from the Yahoo! L6 corpus. Each answer in PUMA is annotated with five perspective spans: ‘cause’, ‘suggestion’, ‘experience’, ‘question’, and ‘information’. Following the perspective and span annotations, summaries are written for each identified perspective. These summaries are concise representations of the underlying perspectives contained within the spans across all answers. Each CQA thread has up to five perspective-specific summaries.
+We use the PUMA dataset [3], a perspective-aware summary annotated corpus of medical question-answer pairs. The PUMA dataset consists of 3, 167 CQA threads with approximately 10K answers filtered from the Yahoo! L6 corpus. Each answer in PUMA is annotated with five perspective spans: ‘cause’, ‘suggestion’, ‘experience’, ‘question’, and ‘information’. Following the perspective and span annotations, summaries are written for each identified perspective. These summaries are concise representations of the underlying perspectives contained within the spans across all answers. Each CQA thread has up to five perspective-specific summaries.
 
 ## Participation
 
@@ -34,8 +35,8 @@ Please visit the CodaBench page to register for the competition and access the d
 For **Task A** (Span Identification and Classification), we use (i) macro-averaged F1 score for classification and (ii) Strict-matching and Proportional-matching for Span Identification.
 
 For **Task B** (Summary Generation), we use two sets of evaluation metrics that capture (i) relevance and (ii) factuality.  
-* Relevance - ROUGE (R1, R2, and RL) [7], BLEU [8], Meteor [9], and BERTScore [10]
-* Factuality - AlignScore [11] and SummaC [12]
+* Relevance - ROUGE (R1, R2, and RL) [4], BLEU [5], Meteor [6], and BERTScore [7]
+* Factuality - AlignScore [8] and SummaC [9]
 
 ## Timeline
 
@@ -58,24 +59,20 @@ For **Task B** (Summary Generation), we use two sets of evaluation metrics that 
 
 ## References
 
-[1] Nestor Alvaro, Mike Conway, Son Doan, Christoph Lofi, John Overington, and Nigel Collier. Crowdsourcing twitter annotations to identify first-hand experiences of prescription drug use. Journal of biomedical informatics, 58:280–287, 2015.
+[1] Tanya Chowdhury and Tanmoy Chakraborty. Cqasumm: Building references for community question answering summarization corpora. In Proceedings of the ACM india joint international conference on data science and management of data, pages 18–26, 2019.
 
-[2] Tanya Chowdhury and Tanmoy Chakraborty. Cqasumm: Building references for community question answering summarization corpora. In Proceedings of the ACM india joint international conference on data science and management of data, pages 18–26, 2019.
+[2] Tanya Chowdhury, Sachin Kumar, and Tanmoy Chakraborty. Neural abstractive summarization with structural attention. arXiv preprint arXiv:2004.09739, 2020.
 
-[3] Tanya Chowdhury, Sachin Kumar, and Tanmoy Chakraborty. Neural abstractive summarization with structural attention. arXiv preprint arXiv:2004.09739, 2020.
+[3] Gauri Naik, Sharad Chandakacherla, Shweta Yadav,and Md Shad Akhtar. No perspective, no perception!! perspective-aware healthcare answer summarization. In Lun-Wei Ku, Andre Martins, and Vivek Srikumar, editors, Findings of the Asso- ciation for Computational Linguistics ACL 2024, pages 15919–15932, Bangkok, Thailand and virtual meeting, August 2024. Association for Computational Linguistics.
 
-[4] Christopher Tauchmann, Thomas Arnold, Andreas Hanselowski, Christian M Meyer, and Margot Mieskes. Beyond generic summarization: A multi-faceted hierarchical summarization corpus of large heterogeneous data. In Proceedings of the Eleventh International Conference on Language Resources and Evaluation (LREC 2018), 2018.
+[4] Chin-Yew Lin. ROUGE: A package for automatic evaluation of summaries. In Text Summarization Branches Out, pages 74–81, Barcelona, Spain, July 2004. Association for Computational Linguistics.
 
-[5] Lea Frermann and Alexandre Klementiev. Inducing document structure for aspect-based summarization. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics, pages 6263–6273, 2019.
+[5] Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Bleu: a method for automatic evaluation of machine translation. In Pierre Isabelle, Eugene Charniak, and Dekang Lin, editors, Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics, pages 311–318, Philadelphia, Pennsylvania, USA, July 2002. Association for Computational Linguistics.
 
-[6] Gauri Naik, Sharad Chandakacherla, Shweta Yadav,and Md Shad Akhtar. No perspective, no perception!! perspective-aware healthcare answer summarization. In Lun-Wei Ku, Andre Martins, and Vivek Srikumar, editors, Findings of the Asso- ciation for Computational Linguistics ACL 2024, pages 15919–15932, Bangkok, Thailand and virtual meeting, August 2024. Association for Computational Linguistics.
+[6] Satanjeev Banerjee and Alon Lavie. METEOR: An automatic metric for MT evaluation with improved correlation with human judgments. In Jade Goldstein, Alon Lavie, Chin-Yew Lin, and Clare Voss, editors, Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization, pages 65–72, Ann Arbor, Michigan, June 2005. Association for Computational Linguistics.
 
-[7] Chin-Yew Lin. ROUGE: A package for automatic evaluation of summaries. In Text Summarization Branches Out, pages 74–81, Barcelona, Spain, July 2004. Association for Computational Linguistics.
+[7] Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q. Weinberger, and Yoav Artzi. Bertscore: Evaluating text generation with bert. In International Conference on Learning Representations, 2020.
 
-[8] Kishore Papineni, Salim Roukos, Todd Ward, and Wei-Jing Zhu. Bleu: a method for automatic evaluation of machine translation. In Pierre Isabelle, Eugene Charniak, and Dekang Lin, editors, Proceedings of the 40th Annual Meeting of the Association for Computational Linguistics, pages 311–318, Philadelphia, Pennsylvania, USA, July 2002. Association for Computational Linguistics.
+[8] Yuheng Zha, Yichi Yang, Ruichen Li, and Zhiting Hu. Alignscore: Evaluating factual consistency with a unified alignment function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 11328–11348, 2023.
 
-[9] Satanjeev Banerjee and Alon Lavie. METEOR: An automatic metric for MT evaluation with improved correlation with human judgments. In Jade Goldstein, Alon Lavie, Chin-Yew Lin, and Clare Voss, editors, Proceedings of the ACL Workshop on Intrinsic and Extrinsic Evaluation Measures for Machine Translation and/or Summarization, pages 65–72, Ann Arbor, Michigan, June 2005. Association for Computational Linguistics.
-
-[10] Tianyi Zhang, Varsha Kishore, Felix Wu, Kilian Q. Weinberger, and Yoav Artzi. Bertscore: Evaluating text generation with bert. In International Conference on Learning Representations, 2020.
-
-[11] Yuheng Zha, Yichi Yang, Ruichen Li, and Zhiting Hu. Alignscore: Evaluating factual consistency with a unified alignment function. In Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), pages 11328–11348, 2023.
+[9] Philippe Laban, Tobias Schnabel, Paul Bennett, and Marti A Hearst. Summac: Re-visiting nli-based models for inconsistency detection in summarization. Transactions of the Association for Computational Linguistics, 10:163–177, 2022.
