@@ -32,12 +32,18 @@ Please visit the CodaBench page to register for the competition and access the d
 
 ## Evaluation Metrics
 
-For **Task A** (Span Identification and Classification), we use (i) macro-averaged F1 score for classification and (ii) Strict-matching and Proportional-matching for Span Identification.
+For each subtask, we will evaluate submissions based on the below mentioned automatic metrics.
 
-For **Task B** (Summary Generation), we use two sets of evaluation metrics that capture (i) relevance and (ii) factuality.  
-* Relevance - ROUGE (R1, R2, and RL) [4], BLEU [5], Meteor [6], and BERTScore [7]
-* Factuality - AlignScore [8] and SummaC [9]
+1. For **Task A** (Span Identification and Classification), we will evaluate using (i) macro-averaged F1 score for classification and (ii) Strict-matching and Proportional-matching for Span Identification.
 
+2. For **Task B** (Summary Generation), we will evaluate generated summaries across two aspects: (i) relevance and (ii) factuality. Each of these evaluation aspect is composed of multiple automatic metrics. 
+    * **Relevance** - ROUGE (R1, R2, and RL) [4], BLEU [5], Meteor [6], and BERTScore [7]
+    * **Factuality** - AlignScore [8] and SummaC [9]
+
+The scores presented for these metrics will be macro-averaged (wherever applicable) across all 5 perspective labels. The aim of this maximize the scores for these automatic metrics.
+
+We will rank submissions based on each of these metrics independently. The final ranking (after the evalutation phase is over) will include normalisation of the scores and human evaluation of the generated summaries. A ranking for task-wise performance will be released along with an overall ranking based on the average of the two tasks.
+ 
 ## Timeline
 
 **First call for participation:** 12th November, 2024  
