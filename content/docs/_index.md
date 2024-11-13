@@ -21,7 +21,7 @@ Given a question Q, a set of answers A, and perspective categories (‘cause’,
 1. **Task A:** Identify the spans in the user answers that reflect a particular perspective and classify the span to the correct perspective.
 2. **Task B:** Generate a concise summary that represents the underlying perspective contained within the spans across all answers.
 
-![Task Description](task_image.png "Task A: Span Identification and Classification (color-highlighted spans in answers), Task B: Summary Generation (Perspective specific summaries)")
+![Task Description](task_image.jpg "Task A: Span Identification and Classification (color-highlighted spans in answers), Task B: Summary Generation (Perspective specific summaries)")
 
 ## Dataset
 We use the PUMA dataset [3], a perspective-aware summary annotated corpus of medical question-answer pairs. The PUMA dataset consists of 3, 167 CQA threads with approximately 10K answers filtered from the Yahoo! L6 corpus. Each answer in PUMA is annotated with five perspective spans: ‘cause’, ‘suggestion’, ‘experience’, ‘question’, and ‘information’. Following the perspective and span annotations, summaries are written for each identified perspective. These summaries are concise representations of the underlying perspectives contained within the spans across all answers. Each CQA thread has up to five perspective-specific summaries.
