@@ -49,7 +49,7 @@ We will rank submissions based on each of these metrics independently. The final
 **First call for participation:** 12th November, 2024  
 **Release of task data (training, validation):** 12th November, 2024  
 **Release of test data:** 25th January, 2025  
-**System submission deadline:** 1st February, 2025  
+**Results submission deadline:** 1st February, 2025  
 **Release of final results:** 5th February, 2025  
 **System papers due:** 25th February, 2025  
 **Notification of acceptance:** 7th March, 2025  
