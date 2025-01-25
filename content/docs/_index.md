@@ -58,6 +58,20 @@ We will rank submissions based on each of these metrics independently. The final
 
 \* All deadlines are 23:59 UTC-12 ("anywhere on Earth").
 
+## Leaderboard
+
+The Official Task Leaderboard is available [here](https://docs.google.com/spreadsheets/d/1faysHdA7YQ-xELztsm7jA5RPTMh7lP7tycsjd8ANLGE/edit?usp=sharing)
+
+<iframe style="width:100%; height:400px;overflow:auto;" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQLjjaFAKykq3dHCINKcsGGxn4SzVrWPBW_za7_0yDYhi1oF_tB6bGTCneRZeQbzkt4fsZVntA8pEpj/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+The official leaderboard will be updated twice a day - 12:00 PM CST (submissions received before 9 AM CST) and 12:00 AM CST (submissions received before 9 PM CST).
+
+## Cash Prize
+We will award the following prizes to participants:
+* First Prize:  USD $100
+* Second Prize: USD $50
+
+Please note that in order to be eligible for the cash prize, you must participate in both tasks and submit a system paper.
+
 ## Organizers
 - [**Shweta Yadav**](https://shwetanlp.github.io/) - University of Illinois at Chicago, USA
 - [**Md. Shad Akhtar**](https://faculty.iiitd.ac.in/~shad.akhtar/) - Indraprastha Institute of Information Technology Delhi, India
