@@ -30,6 +30,8 @@ We use the PUMA dataset [3], a perspective-aware summary annotated corpus of med
 
 Please visit the CodaBench page to register for the competition and access the dataset.
 
+Submission guidelines are available in the [here](https://drive.google.com/file/d/1p83dmP0MUwa6YbvVH_hjRT8gpyjTt-LK/view?usp=sharing).
+
 ## Evaluation Metrics
 
 For each subtask, we will evaluate submissions based on the below mentioned automatic metrics.
@@ -49,10 +51,10 @@ We will rank submissions based on each of these metrics independently. The final
 **First call for participation:** 12th November, 2024  
 **Release of task data (training, validation):** 12th November, 2024  
 **Release of test data:** 25th January, 2025  
-**Results submission deadline:** 1st February, 2025  
+**Results submission deadline:** 4th February, 2025  
 **Release of final results:** 5th February, 2025  
 **System papers due:** 25th February, 2025  
-**Notification of acceptance:** 7th March, 2025  
+**Notification of acceptance:** 1st March, 2025  
 **Camera-ready papers due:**  TBC  
 **CL4Health Workshop:**  TBC
 
