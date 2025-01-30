@@ -55,7 +55,7 @@ We will rank submissions based on each of these metrics independently. The final
 **Release of final results:** 5th February, 2025  
 **System papers due:** 25th February, 2025  
 **Notification of acceptance:** 1st March, 2025  
-**Camera-ready papers due:**  TBC  
+**Camera-ready papers due:**  10th March, 2025  
 **CL4Health Workshop:**  TBC
 
 \* All deadlines are 23:59 UTC-12 ("anywhere on Earth").
