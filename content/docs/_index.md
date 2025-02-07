@@ -74,6 +74,73 @@ We will award the following prizes to participants:
 
 Please note that in order to be eligible for the cash prize, you must participate in both tasks and submit a system paper.
 
+## System Paper Submission
+All participating teams are invited to submit system papers that, pending review, will be published as part of the CL4Health Workshop proceedings and indexed in the ACL Anthology.
+
+Submissions must be electronic and in PDF format, using the Softconf START conference management system.
+
+The submission site is: https://softconf.com/naacl2025/cl4health2025
+
+**Please select the submission category as *“shared task”*.**
+
+Submission Deadline: **2.25.2025 11:59 PM AoE** (Anywhere on Earth)
+
+### Format
+System papers should follow the ACL 2025 paper format (up to 8 pages, with unlimited pages for appendices and references). ACL provides style files for LaTeX and Microsoft Word at https://github.com/acl-org/acl-style-files.
+
+The optional limitations and ethical considerations sections, references, and appendices should be included in the PDF for the paper (not counting towards the page limit), and not be submitted as a separate PDF.
+
+Paper titles should adopt the format: “{TEAM_NAME} at PerAnsSumm 2025:” followed by a descriptive title of the proposed approach. Papers should be submitted in a non-anonymised format (i.e., with author names included).
+
+### References
+
+PerAnsSumm 2025 Overview Paper - the following citation should be used when referring to the shared task in general (note, this is a temporary example that may be subject to change in the future):
+
+```
+@inproceedings{peransumm-overview,
+    title = Overview of the PerAnsSumm 2025 Shared Task on Perspective-aware Healthcare Answer Summarization",
+    author = "Agarwal, Siddhant  and
+      Akhtar, Md Shad  and
+      Yadav, Shweta",
+    booktitle = "Proceedings of the Second Workshop on Patient-Oriented Language Processing (CL4Health) @ NAACL 2025",
+    month = May,
+    year = "2025",
+    address = "Albuquerque, USA",
+    publisher = "Association for Computational Linguistics"
+}
+```
+Task datasets - the following citation should be used when referring to the task dataset:
+
+```
+@inproceedings{naik-etal-2024-perspective,
+    title = "No perspective, no perception!! Perspective-aware Healthcare Answer Summarization",
+    author = "Naik, Gauri  and
+      Chandakacherla, Sharad  and
+      Yadav, Shweta  and
+      Akhtar, Md Shad",
+    editor = "Ku, Lun-Wei  and
+      Martins, Andre  and
+      Srikumar, Vivek",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2024",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.findings-acl.942/",
+    doi = "10.18653/v1/2024.findings-acl.942",
+    pages = "15919--15932"
+}
+```
+
+### Reviewer Nomination
+Reviewer Nomination - Similar to other shared task campaigns (e.g. SemEval), we are requiring that at least one author per paper also acts as a reviewer for our shared task papers. Please nominate the reviewer from your submission using [this](https://forms.gle/NRxV67WZJWCVvybx6) form. If you do not nominate a reviewer, the corresponding author(s) will be automatically selected.
+
+### FAQs:
+1. **I ranked \<X\> on the leaderboard, am I eligible to submit a system paper?**  Yes, All participating teams are invited to submit a system paper irrespective of rank.
+2. **How does a system paper work? What am I supposed to write?** Please look at system paper submissions from other shared tasks such as BioLaySumm. We follow a standard submission format similar to those. Some examples are available here - https://aclanthology.org/2024.bionlp-1.73.pdf, https://aclanthology.org/2024.bionlp-1.77.pdf, https://arxiv.org/pdf/2405.11950
+3. **I am unable to submit the paper by the deadline, can it be extended?** No. The submission deadline will not be extended due to time constraints.
+
+
 ## Organizers
 - [**Shweta Yadav**](https://shwetanlp.github.io/) - University of Illinois at Chicago, USA
 - [**Md. Shad Akhtar**](https://faculty.iiitd.ac.in/~shad.akhtar/) - Indraprastha Institute of Information Technology Delhi, India
