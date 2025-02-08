@@ -133,7 +133,7 @@ Task datasets - the following citation should be used when referring to the task
 ```
 
 ### Reviewer Nomination
-Reviewer Nomination - Similar to other shared task campaigns (e.g. SemEval), we are requiring that at least one author per paper also acts as a reviewer for our shared task papers. Please nominate the reviewer from your submission using [this](https://forms.gle/NRxV67WZJWCVvybx6) form. If you do not nominate a reviewer, the corresponding author(s) will be automatically selected.
+Similar to other shared task campaigns (e.g. SemEval), we are requiring that at least one author per paper also acts as a reviewer for our shared task papers. Please nominate the reviewer from your submission using [this](https://forms.gle/NRxV67WZJWCVvybx6) form. If you do not nominate a reviewer, the corresponding author(s) will be automatically selected.
 
 ### FAQs:
 1. **I ranked \<X\> on the leaderboard, am I eligible to submit a system paper?**  Yes, All participating teams are invited to submit a system paper irrespective of rank.
